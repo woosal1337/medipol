@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/woosal/Documents/GitHub/Medipol-C-CPP/HackerRank/For Loop/main.cpp
+iostream
+-
+cstdio
+-
+

@@ -1,0 +1,4 @@
+Exception in thread "main" java.lang.Error
+	at com.woosal.Main.badMethod(Main.java:24)
+	at com.woosal.Main.main(Main.java:9)
+C

@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/woosal/HDD/GitHub/Medipol-C-CPP/Lab 1/main.cpp
+cmath
+-
+cstdio
+-
+vector
+-
+iostream
+-
+algorithm
+-
+

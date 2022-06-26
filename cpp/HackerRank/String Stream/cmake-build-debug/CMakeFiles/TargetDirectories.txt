@@ -1,0 +1,3 @@
+C:/Users/woosal/Documents/GitHub/Medipol-C-CPP/HackerRank/String Stream/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/woosal/Documents/GitHub/Medipol-C-CPP/HackerRank/String Stream/cmake-build-debug/CMakeFiles/String_Stream.dir
+C:/Users/woosal/Documents/GitHub/Medipol-C-CPP/HackerRank/String Stream/cmake-build-debug/CMakeFiles/edit_cache.dir

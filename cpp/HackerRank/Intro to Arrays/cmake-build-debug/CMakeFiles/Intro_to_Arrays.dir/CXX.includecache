@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/woosal/Documents/GitHub/Medipol-C-CPP/HackerRank/Intro to Arrays/main.cpp
+cmath
+-
+cstdio
+-
+vector
+-
+iostream
+-
+algorithm
+-
+

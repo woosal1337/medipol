@@ -1,0 +1,4 @@
+C:\Users\Vusal\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\203.5981.166\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - NMake Makefiles" "D:\GitHub\Medipol-C-CPP\Homework 2\Question2"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/GitHub/Medipol-C-CPP/Homework 2/Question2/cmake-build-debug

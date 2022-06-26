@@ -1,0 +1,13 @@
+Rational	main.cpp	/^class Rational {$/;"	c	file:
+numerator	main.cpp	/^    int numerator;$/;"	m	class:Rational	file:
+denominator	main.cpp	/^    int denominator;$/;"	m	class:Rational	file:
+getInput	main.cpp	/^    void getInput() {$/;"	f	class:Rational
+operator +	main.cpp	/^    void operator+(Rational);$/;"	p	class:Rational	file:
+operator -	main.cpp	/^    void operator-(Rational);$/;"	p	class:Rational	file:
+operator *	main.cpp	/^    void operator*(Rational);$/;"	p	class:Rational	file:
+operator /	main.cpp	/^    void operator\/(Rational);$/;"	p	class:Rational	file:
+operator +	main.cpp	/^void Rational::operator+(Rational c1) {$/;"	f	class:Rational
+operator -	main.cpp	/^void Rational::operator-(Rational c1) {$/;"	f	class:Rational
+operator *	main.cpp	/^void Rational::operator*(Rational c1) {$/;"	f	class:Rational
+operator /	main.cpp	/^void Rational::operator\/(Rational c1) {$/;"	f	class:Rational
+main	main.cpp	/^int main() {$/;"	f

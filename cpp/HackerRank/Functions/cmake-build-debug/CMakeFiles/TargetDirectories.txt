@@ -1,0 +1,3 @@
+C:/Users/woosal/Documents/GitHub/Medipol-C-CPP/HackerRank/Functions/cmake-build-debug/CMakeFiles/Functions.dir
+C:/Users/woosal/Documents/GitHub/Medipol-C-CPP/HackerRank/Functions/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/woosal/Documents/GitHub/Medipol-C-CPP/HackerRank/Functions/cmake-build-debug/CMakeFiles/rebuild_cache.dir

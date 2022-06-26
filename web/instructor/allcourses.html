@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./allcourses.css"/>
+    <title>Add Drop</title>
+</head>
+<body>
+<ul>
+    <li><a class="active" href="./index.html">Courses</a></li>
+    <li><a class="passive" href="./researchgroup.html">Research Group</a></li>
+    <li><a class="passive" href="../index.html">Sign-out</a></li>
+</ul>
+<table>
+    <thead>
+    <tr>
+        <th>Course Name</th>
+        <th>Type</th>
+        <th>Code</th>
+        <th>Total Students</th>
+        <th>See Students</th>
+        <th>Download Students</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td data-column="Course Name">Introduction to Programming</td>
+        <td data-column="Type">Mandatory</td>
+        <td data-column="Code">COE2133840</td>
+        <td data-column="Total Students">30</td>
+        <td data-column="See Students">
+            <a href="./introductiontoprogramming.html">
+                <button class="w3-button w3-rectangle w3-green">Click here</button>
+            </a>
+        </td>
+        <td data-column="Download Students" style="text-align:center">
+            <a href="./all_students.xlsx" download>
+                <button class="w3-button w3-rectangle w3-green">Click here</button>
+            </a>
+        </td>
+    </tr>
+
+    <tr>
+        <td data-column="Course Name">Advanced Programming</td>
+        <td data-column="Type">Mandatory</td>
+        <td data-column="Code">COE2133841</td>
+        <td data-column="Total Students">20</td>
+        <td data-column="See Students">
+            <a href="./advancedprogramming.html">
+                <button class="w3-button w3-rectangle w3-green">Click here</button>
+            </a>
+        </td>
+        <td data-column="Download Students" style="text-align:center">
+            <a href="./all_students.xlsx" download>
+                <button class="w3-button w3-rectangle w3-green">Click here</button>
+            </a>
+        </td>
+    </tr>
+
+    <tr>
+        <td data-column="Course Name">Computer Organization</td>
+        <td data-column="Type">Mandatory</td>
+        <td data-column="Code">COE2133842</td>
+        <td data-column="Total Students">15</td>
+        <td data-column="See Students">
+            <a href="./computerorganization.html">
+                <button class="w3-button w3-rectangle w3-green">Click here</button>
+            </a>
+        </td>
+        <td data-column="Download Students" style="text-align:center">
+            <a href="./all_students.xlsx" download>
+                <button class="w3-button w3-rectangle w3-green">Click here</button>
+            </a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+
+</body>
+</html>

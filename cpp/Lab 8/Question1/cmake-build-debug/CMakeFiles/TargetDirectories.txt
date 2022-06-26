@@ -1,0 +1,3 @@
+/media/vusal/HDD/GitHub/Medipol-C-CPP/Lab 8/Question1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/media/vusal/HDD/GitHub/Medipol-C-CPP/Lab 8/Question1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/media/vusal/HDD/GitHub/Medipol-C-CPP/Lab 8/Question1/cmake-build-debug/CMakeFiles/Question1.dir

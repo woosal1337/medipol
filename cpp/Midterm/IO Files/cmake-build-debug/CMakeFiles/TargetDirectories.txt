@@ -1,0 +1,3 @@
+D:/GitHub/Medipol-C-CPP/Midterm/IO Files/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/GitHub/Medipol-C-CPP/Midterm/IO Files/cmake-build-debug/CMakeFiles/IO_Files.dir
+D:/GitHub/Medipol-C-CPP/Midterm/IO Files/cmake-build-debug/CMakeFiles/edit_cache.dir

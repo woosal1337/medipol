@@ -1,0 +1,3 @@
+D:/GitHub/Medipol-C-CPP/Midterm/IO Reading/build/CMakeFiles/IO_Reading.dir
+D:/GitHub/Medipol-C-CPP/Midterm/IO Reading/build/CMakeFiles/ALL_BUILD.dir
+D:/GitHub/Medipol-C-CPP/Midterm/IO Reading/build/CMakeFiles/ZERO_CHECK.dir

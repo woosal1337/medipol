@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MEBIS</title>
+
+    <script src="index.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div class="container" id="container">
+    <div class="form-container sign-up-container">
+        <form id="signUpForm" action="#">
+            <br>
+            <br>
+            <h1>Create Account</h1>
+            <input type="text" placeholder="First Name" id="firstName"/>
+            <input type="text" placeholder="Last Name" id="lastName"/>
+            <input type="text" placeholder="Username" id="userName"/>
+            <input type="password" placeholder="Password" id="password"/>
+
+            <select class="custom-select" id="customSelect">
+                <option value="secretary">Secretary</option>
+                <option value="instructor">Instructor</option>
+                <option value="student">Student</option>
+            </select>
+            <button id="signUpReal">Sign Up</button>
+
+            <div class="social-container">
+                <a href="#" class="social"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="social"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="social"><i class="fa fa-instagram"></i></a>
+                <a href="#" class="social"><i class="fa fa-linkedin"></i></a>
+                <a href="#" class="social"><i class="fa fa-youtube"></i></a>
+            </div>
+
+        </form>
+    </div>
+    <div class="form-container sign-in-container">
+        <form id="signInForm" action="#">
+            <h1>Sign in</h1>
+
+
+            <input type="email" placeholder="Email" id="emailSignIn"/>
+            <input type="password" placeholder="Password" id="passwordSignIn"/>
+            <button id="realSignIn">Sign In</button>
+
+            <div class="social-container">
+                <a href="#" class="social"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="social"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="social"><i class="fa fa-instagram"></i></a>
+                <a href="#" class="social"><i class="fa fa-linkedin"></i></a>
+                <a href="#" class="social"><i class="fa fa-youtube"></i></a>
+            </div>
+
+        </form>
+
+    </div>
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-left">
+                <h1 style="margin-top: 20px">Have an account?</h1>
+                <p>Already have a registered account? Click the Sign In button down below to sign into your account!</p>
+                <button class="ghost" id="signIn">Sign In</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+                <h1>Welcome!</h1>
+                <p>Do not have an account? Click the Sing Up button down below to create your account!</p>
+                <button class="ghost" id="signUp">Sign Up</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

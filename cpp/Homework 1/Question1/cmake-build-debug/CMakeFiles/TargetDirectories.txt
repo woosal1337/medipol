@@ -1,0 +1,3 @@
+D:/GitHub/Medipol-C-CPP/Homework 1/Question1/cmake-build-debug/CMakeFiles/Question1.dir
+D:/GitHub/Medipol-C-CPP/Homework 1/Question1/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/GitHub/Medipol-C-CPP/Homework 1/Question1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

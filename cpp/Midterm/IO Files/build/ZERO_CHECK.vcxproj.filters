@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\GitHub\Medipol-C-CPP\Midterm\IO Files\build\CMakeFiles\d94c5de140ef75efd2a9363ebdd89ea2\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{098D7E7F-D5E8-3020-AD22-C32B99920D02}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

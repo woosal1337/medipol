@@ -1,0 +1,3 @@
+C:/Users/woosal/Documents/GitHub/Medipol-C-CPP/HackerRank/Variable Sized Arrays/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/woosal/Documents/GitHub/Medipol-C-CPP/HackerRank/Variable Sized Arrays/cmake-build-debug/CMakeFiles/Variable_Sized_Arrays.dir
+C:/Users/woosal/Documents/GitHub/Medipol-C-CPP/HackerRank/Variable Sized Arrays/cmake-build-debug/CMakeFiles/rebuild_cache.dir

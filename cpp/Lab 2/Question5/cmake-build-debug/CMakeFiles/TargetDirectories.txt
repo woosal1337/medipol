@@ -1,0 +1,3 @@
+D:/GitHub/Medipol-C-CPP/Lab 2/Qusetion5/cmake-build-debug/CMakeFiles/Qusetion5.dir
+D:/GitHub/Medipol-C-CPP/Lab 2/Qusetion5/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/GitHub/Medipol-C-CPP/Lab 2/Qusetion5/cmake-build-debug/CMakeFiles/rebuild_cache.dir

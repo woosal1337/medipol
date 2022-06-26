@@ -1,0 +1,2 @@
+D:\GitHub\Medipol-C-CPP\Training\Pointers\pointersTraining\Debug\pointersTraining.exe
+D:\GitHub\Medipol-C-CPP\Training\Pointers\pointersTraining\Debug\pointersTraining.pdb
