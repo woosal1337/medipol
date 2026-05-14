@@ -1,0 +1,85 @@
+Thread: Thread T1
+Start: 2021-12-25 19:18:12.970858
+End: 2021-12-25 19:18:13.008321
+Duration: 0:00:00.037463
+
+Thread: Thread T2
+Start: 2021-12-25 19:18:12.981163
+End: 2021-12-25 19:18:13.020656
+Duration: 0:00:00.039493
+
+Thread: Thread T3
+Start: 2021-12-25 19:18:12.986412
+End: 2021-12-25 19:18:13.004481
+Duration: 0:00:00.018069
+
+Thread: Thread T4
+Start: 2021-12-25 19:18:12.991631
+End: 2021-12-25 19:18:13.027447
+Duration: 0:00:00.035816
+
+Thread: Thread T5
+Start: 2021-12-25 19:18:12.996879
+End: 2021-12-25 19:18:13.031676
+Duration: 0:00:00.034797
+
+Thread: Thread T6
+Start: 2021-12-25 19:18:13.031755
+End: 2021-12-25 19:18:13.046551
+Duration: 0:00:00.014796
+
+Thread: Thread T7
+Start: 2021-12-25 19:18:13.037047
+End: 2021-12-25 19:18:13.061990
+Duration: 0:00:00.024943
+
+Thread: Thread T8
+Start: 2021-12-25 19:18:13.051830
+End: 2021-12-25 19:18:13.071361
+Duration: 0:00:00.019531
+
+Thread: Thread M12
+Start: 2021-12-25 19:18:13.071649
+End: 2021-12-25 19:18:13.072468
+Duration: 0:00:00.000819
+
+Thread: Thread M34
+Start: 2021-12-25 19:18:13.072586
+End: 2021-12-25 19:18:13.073505
+Duration: 0:00:00.000919
+
+Thread: Thread M56
+Start: 2021-12-25 19:18:13.073662
+End: 2021-12-25 19:18:13.074547
+Duration: 0:00:00.000885
+
+Thread: Thread M78
+Start: 2021-12-25 19:18:13.076451
+End: 2021-12-25 19:18:13.077293
+Duration: 0:00:00.000842
+
+Thread: Thread M1
+Start: 2021-12-25 19:18:13.077496
+End: 2021-12-25 19:18:13.079165
+Duration: 0:00:00.001669
+
+Thread: Thread M2
+Start: 2021-12-25 19:18:13.079314
+End: 2021-12-25 19:18:13.081181
+Duration: 0:00:00.001867
+
+Thread: Thread M0
+Start: 2021-12-25 19:18:13.081364
+End: 2021-12-25 19:18:13.085636
+Duration: 0:00:00.004272
+
+
+Size of the sorted array 120703
+Total Time:  0:00:00.114967
+
+Manually Sorted Array
+Start Time: 2021-12-25 19:18:13.097464
+End Time: 2021-12-25 19:18:13.191948
+Duration: 0:00:00.094484
+
+Process finished with exit code 0

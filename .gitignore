@@ -1,0 +1,52 @@
+# IDE
+.idea/
+.vscode/
+.vs/
+*.iml
+*.suo
+*.user
+
+# Build artifacts
+cmake-build-*/
+build/
+out/
+Debug/
+Release/
+x64/
+*.obj
+*.exe
+*.exp
+*.lib
+*.pdb
+*.ilk
+*.tlog
+*.ipch
+*.VC.db
+*.VC.opendb
+
+# Java
+target/
+*.class
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Node / web
+node_modules/
+artifacts/
+cache/
+coverage/
+
+# Secrets
+.env
+.env.local
+*.pem
+*.key
+
+# OS
+.DS_Store
+Thumbs.db

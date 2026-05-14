@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./applyresearchgroup.css"/>
+    <title>Student - Apply Research</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #4CAF50;
+            border-radius: 14px;
+            resize: vertical;
+        }
+
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            border-radius: 25px;
+            padding: 200px;
+        }
+
+        .col-25 {
+            float: left;
+            width: 100%;
+            margin-top: 6px;
+        }
+
+        .col-75 {
+            float: left;
+            width: 100%;
+            margin-top: 6px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .col-25, .col-75, input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+    </style>
+
+    <script>
+        function sumbitForm() {
+            alert("Your application for the project has been submitted!");
+            return false;
+        }
+    </script>
+</head>
+<ul>
+    <li><a class="passive" href="./index.html">Courses</a></li>
+    <li><a class="active" href="./researchgroup.html">Research Group</a></li>
+    <li><a class="passive" href="../index.html">Sign-out</a></li>
+</ul>
+
+<body>
+<div class="container">
+    <form action="./researchgroup.html">
+        <div class="row">
+            <div class="col-25">
+                <label for="instructors" class="white">Instructors</label>
+            </div>
+            <div class="col-75">
+                <select id="instructors" name="instructors" class="white">
+                    <option value="selimakyokuş">Selim AKYOKUŞ</option>
+                    <option value="hasanfehmiateş">Hasan Fehmi ATEŞ</option>
+                    <option value="redaalhajj">Reda ALHAJJ</option>
+                    <option value="bahadırkürşatgüntürk">Bahadır Kürşat GÜNTÜRK</option>
+                    <option value="ismaildabanlı">İsmail DABANLI</option>
+                    <option value="melisalmulakaradayı">Melis Almula KARADAYI</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="subject" class="white">Subject</label>
+            </div>
+            <div class="col-75">
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" class="white"></textarea>
+                <input style="margin-top: 15px;" type="file" id="myFile" name="Your CV">
+            </div>
+        </div>
+        <div class="row">
+            <input type="submit" style="width: 150px; border-radius:15px;" value="Submit" onclick="sumbitForm()">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

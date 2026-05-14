@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="./researchgroupstudents.css"/>
+  <title>Research Group Students</title>
+  <script>
+    function reddet() {
+      alert("Başvuru reddedildi.");
+    }
+
+    function kabulet() {
+      alert("Başvuru kabul edildi.");
+    }
+
+    function myFunction() {
+      var x = document.getElementById("myDIV");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+
+  </script>
+
+  <style>
+    #myDIV {
+      width: 100%;
+      text-align: center;
+      margin-top: 20px;
+      color:#eee;
+    }
+  </style>
+</head>
+<body>
+<ul>
+  <li><a class="passive" href="./index.html">Courses</a></li>
+  <li><a class="active" href="./researchgroup.html">Research Group</a></li>
+  <li><a class="passive" href="../index.html">Sign-out</a></li>
+</ul>
+<table>
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Surname</th>
+    <th>GPA</th>
+    <th>Class</th>
+    <th>Note</th>
+    <th>Attachments</th>
+    <th>Accept/Reject</th>
+
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td data-column="ID">6420001</td>
+    <td data-column="Name">Ali</td>
+    <td data-column="Surname">Yasar</td>
+    <td data-column="GPA">3.5</td>
+    <td data-column="Class">4</td>
+    <td data-column="Note">
+      <button class="w3-button w3-rectangle w3-green" onclick="myFunction()">See Message</button>
+    <td data-column="Attachments">
+    <a href="./attachment.pdf" download>
+        <button class="w3-button w3-rectangle w3-green">Click here</button>
+      </a>
+    </td>
+    <td data-column="Accept/Reject">
+      <button onclick="kabulet()" class="w3-button w3-circle w3-green">+</button>
+      <button onclick="reddet()" style="width:45px" class="w3-button w3-circle w3-green">-</button>
+    </td>
+
+  </tr>
+  <tr>
+    <td data-column="ID">6420002</td>
+    <td data-column="Name">Veli</td>
+    <td data-column="Surname">Isik</td>
+    <td data-column="GPA">3.2</td>
+    <td data-column="Class">3</td>
+    <td data-column="Note">
+      <button class="w3-button w3-rectangle w3-green" onclick="myFunction()">See Message</button>
+    </td>
+
+    <td data-column="Attachments">
+      <a href="./attachment.pdf" download>
+        <button class="w3-button w3-rectangle w3-green">Click here</button>
+      </a>
+    </td>
+    <td data-column="Accept/Reject">
+      <button onclick="kabulet()" class="w3-button w3-circle w3-green">+</button>
+      <button onclick="reddet()" style="width:45px" class="w3-button w3-circle w3-green">-</button>
+    </td>
+
+  </tr>
+  <tr>
+    <td data-column="ID">6420003</td>
+    <td data-column="Name">Yeşim</td>
+    <td data-column="Surname">Salkım</td>
+    <td data-column="GPA">3.8</td>
+    <td data-column="Class">4</td>
+    <td data-column="Note">
+      <button class="w3-button w3-rectangle w3-green" onclick="myFunction()">See Message</button>
+    </td>
+    <td data-column="Attachments">
+      <a href="./attachment.pdf" download>
+        <button class="w3-button w3-rectangle w3-green">Click here</button>
+      </a>
+    </td>
+    <td data-column="Accept/Reject">
+      <button onclick="kabulet()" class="w3-button w3-circle w3-green">+</button>
+      <button onclick="reddet()" style="width:45px" class="w3-button w3-circle w3-green">-</button>
+    </td>
+  </tr>
+
+  <tr>
+    <td data-column="ID">6420004</td>
+    <td data-column="Name">Ahmet</td>
+    <td data-column="Surname">Ateş</td>
+    <td data-column="GPA">2.68</td>
+    <td data-column="Class">2</td>
+    <td data-column="Note">
+      <button class="w3-button w3-rectangle w3-green" onclick="myFunction()">See Message</button>
+    </td>
+    <td data-column="Attachments">
+      <a href="./attachment.pdf" download>
+        <button class="w3-button w3-rectangle w3-green">Click here</button>
+      </a>
+    </td>
+    <td data-column="Accept/Reject">
+      <button onclick="kabulet()" class="w3-button w3-circle w3-green">+</button>
+      <button onclick="reddet()" style="width:45px" class="w3-button w3-circle w3-green">-</button>
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+<div id="myDIV">
+  <h1>Note:</h1>
+  <p>Sir, please, ty.</p>
+</div>
+
+</body>
+</html>
