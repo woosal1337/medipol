@@ -12,6 +12,7 @@
 | `db/` | Database / blockchain project (`chain` Hardhat workspace, `backend` Node service) |
 | `dld/` | Digital Logic Design notes, reference PDFs, and project files |
 | `java/` | Java labs, homeworks, midterm/final exercises |
+| `nlp/` | NLP course presentation: sentiment analysis with VADER, TF-IDF + LR, DistilBERT |
 | `os/` | Operating Systems homework |
 | `physics/` | Physics study materials, in-class slides, old exams |
 | `py/` | Introductory Python labs, quizzes, homeworks, final |
