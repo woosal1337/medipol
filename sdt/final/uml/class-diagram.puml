@@ -1,0 +1,145 @@
+@startuml class-diagram
+title Project 9: Smart Logistics & Freight Routing Engine
+
+skinparam classAttributeIconSize 0
+skinparam packageStyle rectangle
+hide empty members
+
+package "cargo (shared data contract)" {
+    interface Cargo <<component>> {
+        +contents() : String
+        +weightKg() : double
+        +volumeM3() : double
+        +declaredValueUsd() : double
+        +handlingSurchargeUsd() : double
+        +handlingLabels() : List<String>
+    }
+    class StandardCargo <<concrete component>> {
+        {static} +of(contents, weightKg, volumeM3, declaredValueUsd) : StandardCargo
+    }
+    Cargo <|.. StandardCargo
+}
+
+package "handling (DECORATOR)" {
+    abstract class CargoDecorator {
+        #wrapped : Cargo
+    }
+    class Refrigeration
+    class FragilePackaging
+    class HazmatSecurity
+    class Oversized <<added later, OCP proof>>
+    enum HandlingFeature <<creation registry>> {
+        REFRIGERATION
+        FRAGILE_PACKAGING
+        HAZMAT_SECURITY
+        OVERSIZED
+        {abstract} +applyTo(cargo : Cargo) : Cargo
+    }
+
+    Cargo <|.. CargoDecorator
+    CargoDecorator o--> "1" Cargo : wraps
+    CargoDecorator <|-- Refrigeration
+    CargoDecorator <|-- FragilePackaging
+    CargoDecorator <|-- HazmatSecurity
+    CargoDecorator <|-- Oversized
+    HandlingFeature ..> CargoDecorator : <<creates>>
+}
+
+package "routing (STRATEGY)" {
+    interface RoutingStrategy {
+        +mode() : String
+        +estimate(cargo : Cargo, route : Route) : RouteQuote
+    }
+    class AirFreight
+    class RailTransport
+    class GroundShipping
+    class RoutePlanner <<context>> {
+        -strategy : RoutingStrategy
+        {static} +using(strategy) : RoutePlanner
+        +use(strategy) : RoutePlanner
+        +plan(cargo, route) : RouteQuote
+    }
+    class RoutingStrategies <<factory>> {
+        {static} +airFreight() : RoutingStrategy
+        {static} +railTransport() : RoutingStrategy
+        {static} +groundShipping() : RoutingStrategy
+    }
+    class Route {
+        {static} +of(origin, destination, distanceKm) : Route
+    }
+    class RouteQuote {
+        +costUsd() : double
+        +transitHours() : double
+    }
+
+    RoutingStrategy <|.. AirFreight
+    RoutingStrategy <|.. RailTransport
+    RoutingStrategy <|.. GroundShipping
+    RoutePlanner o--> "1" RoutingStrategy : delegates to
+    RoutingStrategy ..> Cargo : reads data
+    RoutingStrategy ..> Route
+    RoutingStrategy ..> RouteQuote : <<creates>>
+    RoutingStrategies ..> RoutingStrategy : <<creates>>
+}
+
+package "alerts (OBSERVER)" {
+    interface ShipmentObserver {
+        +onStatusUpdate(shipmentId, oldStatus, newStatus)
+    }
+    class ShipmentStatusPublisher <<subject>> {
+        -observers : List<ShipmentObserver>
+        +subscribe(observer)
+        +unsubscribe(observer)
+        +publish(shipmentId, oldStatus, newStatus)
+    }
+    class CustomerDashboard
+    class WarehouseManager
+    class EmailNotificationService
+
+    ShipmentObserver <|.. CustomerDashboard
+    ShipmentObserver <|.. WarehouseManager
+    ShipmentObserver <|.. EmailNotificationService
+    ShipmentStatusPublisher o--> "*" ShipmentObserver : notifies
+}
+
+package "builder (BUILDER)" {
+    class CargoPlaneShipment <<product>> {
+        -manifest : Map<Hold, List<Cargo>>
+        -securityLog : List<String>
+        {static} +builder() : CargoPlaneShipmentBuilder
+        +updateStatus(newStatus)
+        +subscribe(observer)
+        +manifestSummary() : String
+    }
+    class CargoPlaneShipmentBuilder {
+        +forFlight(flightNumber, aircraftModel, maxPayloadKg)
+        +route(route)
+        +loadHold(hold, cargo)
+        +tsaCheck(name)
+        +verifyWeightDistribution()
+        +build() : CargoPlaneShipment
+    }
+    class ShipmentDirector <<director>> {
+        {static} +fullyLoadedFreighter(flightNumber, route, manifest) : CargoPlaneShipment
+    }
+    enum Hold {
+        FORWARD
+        CENTER
+        AFT
+    }
+
+    ShipmentDirector ..> CargoPlaneShipmentBuilder : directs steps
+    CargoPlaneShipmentBuilder ..> CargoPlaneShipment : <<builds>>
+    CargoPlaneShipment *--> "1" ShipmentStatusPublisher : composes
+    CargoPlaneShipment o--> "*" Cargo : manifest
+    CargoPlaneShipment ..> Hold
+}
+
+class Main <<client / driver>>
+Main ..> HandlingFeature
+Main ..> RoutePlanner
+Main ..> RoutingStrategies
+Main ..> ShipmentDirector
+Main ..> StandardCargo : via of()
+
+@enduml

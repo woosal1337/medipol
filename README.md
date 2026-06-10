@@ -16,6 +16,7 @@
 | `os/` | Operating Systems homework |
 | `physics/` | Physics study materials, in-class slides, old exams |
 | `py/` | Introductory Python labs, quizzes, homeworks, final |
+| `sdt/` | Software Design Patterns final project (Java: Builder, Decorator, Strategy, Observer) |
 | `src/` | Shared assets |
 | `web/` | Web project (HTML / CSS / JS) |
 
